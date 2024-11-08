@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invoice - Tijaun's Saxophones</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="invoice.css">
+	<script src="invoice.js"></script>
+    <script src="main.js"></script>
+</head>
+
+
+</head>
+<body>
+    <div class="invoice-container">
+        <div class="invoice-header">
+            <div class="invoice-title">
+                <div>
+                    <h1 style="font-size: 2rem; font-weight: bold;">INVOICE</h1>
+                    <p id="invoice-number" style="margin-top: 0.5rem; opacity: 0.9;"></p>
+                </div>
+                <div style="text-align: right;">
+                    <h2 style="font-size: 1.5rem;">Tijaun's Saxophones</h2>
+                    <p style="margin-top: 0.5rem; opacity: 0.9;">Premium Saxophone Collection</p>
+                </div>
+            </div>
+            <div class="invoice-info">
+                <div class="info-group">
+                    <p><i class="fas fa-calendar"></i> Date</p>
+                    <p id="current-date"></p>
+                </div>
+                <div class="info-group">
+                    <p><i class="fas fa-credit-card"></i> Payment Method</p>
+                    <p>Credit Card</p>
+                </div>
+                <div class="info-group">
+                    <p><i class="fas fa-building"></i> Store Location</p>
+                    <p>1738 Praques Street <br> Amenadeal City, JA </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="invoice-body">
+            <table class="items-table">
+                <thead>
+                    <tr>
+                        <th>Product</th>
+                        <th>Description</th>
+                        <th>Quantity</th>
+                        <th>Price</th>
+                        <th>Total</th>
+                    </tr>
+                </thead>
+                <tbody id="invoice-items">
+                    <!-- Items will be inserted here by JavaScript -->
+                </tbody>
+            </table>
+
+            <div class="invoice-summary">
+                <div class="summary-details">
+                    <div class="summary-row">
+                        <span>Subtotal</span>
+                        <span id="subtotal"></span>
+                    </div>
+                    <div class="summary-row">
+                        <span>Tax (15%)</span>
+                        <span id="tax"></span>
+                    </div>
+                    <div class="summary-row total">
+                        <span>Total</span>
+                        <span id="total"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div style="text-align: center;">
+        <button onclick="window.print()" class="print-button">
+            <i class="fas fa-print"></i> Print Invoice
+        </button>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,149 @@
+
+:root {
+    --primary: #D4AF37;      /* Rich gold */
+    --secondary: #1B2C49;    /* Deep navy */
+    --accent: #C17F59;       /* Brass copper */
+    --bg: #0D1117;          /* Deep background */
+    --text: #FFFFFF;        /* White text */
+    --glow: rgba(212, 175, 55, 0.8); /* Gold glow */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: var(--bg);
+    padding: 2rem;
+}
+
+.invoice-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    background: var(--primary);
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.invoice-header {
+    background: var(--glow);
+    color: white;
+    padding: 2rem;
+}
+
+.invoice-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    margin-bottom: 1.5rem;
+}
+
+.invoice-info {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    font-size: 0.9rem;
+}
+
+.info-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.info-group i {
+    margin-right: 0.5rem;
+}
+
+.invoice-body {
+    padding: 2rem;
+}
+
+.items-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+.items-table th {
+    background: #f8fafc;
+    padding: 1rem;
+    text-align: left;
+    font-weight: 600;
+    color: #1e293b;
+}
+
+.items-table td {
+    padding: 1rem;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.item-image {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.invoice-summary {
+    margin-top: 2rem;
+    padding-top: 2rem;
+    border-top: 1px solid #e2e8f0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.summary-details {
+    width: 300px;
+}
+
+.summary-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 0;
+    font-size: 0.95rem;
+}
+
+.summary-row.total {
+    font-weight: 600;
+    font-size: 1.1rem;
+    border-top: 2px solid #e2e8f0;
+    margin-top: 0.5rem;
+    padding-top: 1rem;
+}
+
+.print-button {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: 2rem;
+    text-decoration: none;
+}
+
+.print-button:hover {
+    background: #1d4ed8;
+}
+
+@media print {
+    body {
+        padding: 0;
+        background: white;
+    }
+
+    .invoice-container {
+        box-shadow: none;
+    }
+
+    .print-button {
+        display: none;
+    }
+}

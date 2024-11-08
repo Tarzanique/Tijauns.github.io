@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>TIjauns' Saxophones</title>
+    <link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script src="main.js" defer></script>
+    <script src="cart-handler.js" defer></script>
+</head>
+
+<body class="products-body"> 
+	<div class="logo-container">
+		<a href="home.html" class="logo-text">
+			Tijaun's
+		</a>
+	</div>
+    
+    <div class="menu-icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+	
+	<div class="nav-menu">
+		<ul>
+			<li data-text = "Home"><a href="home.html">Home</a></li>
+			<li data-text = "Saxophones"><a href="#">Saxophones</a></li>
+            <li data-text = "About Us"><a href="about.html">About Us</a></li>
+            <li data-text = "Invoice"><a href="invoice.html">Invoice</a></li>
+            
+		</ul>
+	</div>
+
+    <!-- Add this new section -->
+<div class="product-section">
+    <h2>Our Exclusive Collection</h2>
+    <div class="product-container">
+        <div class="product-card">
+            <img src="./images/yamaha/yas-26.jpg" alt="Luxury Saxophone 1">
+            <h3>Yamaha YAS-26</h3>
+            <p class="price">$2999</p>
+            <button class="add-to-cart-btn"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+            <img src="./images/yamaha/YAS-200adii-alto.jpg" alt="Luxury Saxophone 2">
+            <h3>Yamaha YAS-200ADII</h3>
+            <p class="price">$4999</p>
+            <button class="add-to-cart-btn"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <img src="./images/yamaha/YAS-280.jpg" alt="Luxury Saxophone 3">
+            <h3>Yamaha YAS-280</h3>
+            <p class="price">$2599</p>
+            <button class="add-to-cart-btn"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+            <img src="./images/yamaha/YAS-475ii.jpg" alt="Luxury Saxophone 4">
+            <h3>Yamaha YAS-475II</h3>
+            <p class="price">$6599</p>
+            <button class="add-to-cart-btn"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+            <img src="./images/yamaha/YAS-480-alto.jpg" alt="Luxury Saxophone 5">
+            <h3>Yamaha YAS-480</h3>
+            <p class="price">$7699</p>
+            <button class="add-to-cart-btn"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+            <img src="./images/yamaha/YAS-580al.jpg" alt="Luxury Saxophone 6">
+            <h3>Yamaha YAS-580 AL</h3>
+            <p class="price">$1599</p>
+            <button class="add-to-cart-btn"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <img src="./images/yamaha/YTS-26.jpg" alt="Luxury Saxophone 7">
+            <h3>Yamaha YTS-26</h3>
+            <p class="price">$4699</p>
+            <button class="add-to-cart-btn"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <img src="./images/yamaha/YTS-300ad.jpg" alt="Luxury Saxophone 8">
+            <h3>Yamaha YTS-300 AD</h3>
+            <p class="price">$2599</p>
+            <button class="add-to-cart-btn"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+            <img src="./images/yamaha/YTS-480.jpg" alt="Luxury Saxophone 9">
+            <h3>Yamaha YTS-480</h3>
+            <p class="price">$3699</p>
+            <button class="add-to-cart-btn"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+            <img src="./images/yamaha/YTS-200adii.jpg" alt="Luxury Saxophone 10">
+            <h3>Yamaha YTS-200ADII</h3>
+            <p class="price">$2599</p>
+            <button class="add-to-cart-btn"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+        </div>
+
+
+        <div class="product-card">
+            <img src="./images/cannonball/AVR-L.jpg" alt="Luxury Saxophone 11">
+            <h3>Cannonball AVR-L</h3>
+            <p class="price">$899</p>
+            <button class="add-to-cart-btn"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <img src="./images/cannonball/Big-bell.jpg" alt="Luxury Saxophone 12">
+            <h3>Cannonball Big-Bell Series</h3>
+            <p class="price">$999</p>
+            <button class="add-to-cart-btn"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <img src="./images/cannonball/GA5-B.jpg" alt="Luxury Saxophone 13">
+            <h3>Cannonball GA5-B</h3>
+            <p class="price">$2599</p>
+            <button class="add-to-cart-btn"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+            <img src="./images/cannonball/Vintage.jpg" alt="Luxury Saxophone 14">
+            <h3>Cannonball Vintage Series</h3>
+            <p class="price">$22599</p>
+            <button class="add-to-cart-btn"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+            <img src="./images/selmer/SeriesII-alto.jpg" alt="Luxury Saxophone 15">
+            <h3>Selmer Series II Alto</h3>
+            <p class="price">$12599</p>
+            <button class="add-to-cart-btn"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+            <img src="./images/selmer/SeriesII-sopranino.jpg" alt="Luxury Saxophone 16">
+            <h3>Selmer  Series II Sopranino</h3>
+            <p class="price">$4599</p>
+            <button class="add-to-cart-btn"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+            <img src="./images/selmer/SeriesIII-baritone.jpg" alt="Luxury Saxophone 17">
+            <h3>Selmer  Series III Baritone</h3>
+            <p class="price">$7899</p>
+            <button class="add-to-cart-btn"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+            <img src="./images/selmer/SeriesIII-tenor.jpg" alt="Luxury Saxophone 18">
+            <h3>Selmer Series III Tenor</h3>
+            <p class="price">$9999</p>
+            <button class="add-to-cart-btn"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+            <img src="./images/selmer/Signature.jpg" alt="Luxury Saxophone 19">
+            <h3>Selmer Signature</h3>
+            <p class="price">$9599</p>
+            <button class="add-to-cart-btn"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+            <img src="./images/yanagisawa/AWO1.jpg" alt="Luxury Saxophone 20">
+            <h3>Yanagisawa AWO1</h3>
+            <p class="price">$13599</p>
+            <button class="add-to-cart-btn"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+            <img src="./images/yanagisawa/AWO10.jpg" alt="Luxury Saxophone 21">
+            <h3>Yanagisawa AWO10</h3>
+            <p class="price">$39699</p>
+            <button class="add-to-cart-btn"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+            <img src="./images/yanagisawa/AWO30.jpg" alt="Luxury Saxophone 22">
+            <h3>Yanagisawa AWO30</h3>
+            <p class="price">$15999</p>
+            <button class="add-to-cart-btn"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+            <img src="./images/yanagisawa/WO1.jpg" alt="Luxury Saxophone 23">
+            <h3>Yanagisawa WO1</h3>
+            <p class="price">$88199</p>
+            <button class="add-to-cart-btn"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+            <img src="./images/yanagisawa/WO2.jpg" alt="Luxury Saxophone 24">
+            <h3>Yanagisawa WO2</h3>
+            <p class="price">$52599</p>
+            <button class="add-to-cart-btn"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+        </div>
+    </div>
+
+
+    
+</div>
+</body>
+
+
